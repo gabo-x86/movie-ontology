@@ -1,6 +1,7 @@
 package movieontology;
 
 import com.owl_api.OntologyUtils;
+import com.owl.explorer.*;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.text.ParseException;
@@ -11,12 +12,9 @@ import org.semanticweb.owlapi.model.OWLOntologyStorageException;
 
 public class MovieOntology {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) throws IOException, ParseException, OWLOntologyCreationException, FileNotFoundException, OWLOntologyStorageException {
-        // TODO code application logic here
-        OntologyUtils ontologyUtils=new OntologyUtils("ontology/MovieOntology.owl");
+
+        /*OntologyUtils ontologyUtils=new OntologyUtils("ontology/MovieOntology.owl");
         ontologyUtils.loadPersons("dataset/ok/personas.csv");
         ontologyUtils.loadAwards("dataset/ok/premios.csv");
         ontologyUtils.loadMovies("dataset/ok/peliculas.csv");
@@ -25,9 +23,12 @@ public class MovieOntology {
         ontologyUtils.loadMovieActorRelation("dataset/ok/relaciones_Actor-Pelicula.csv");
         ontologyUtils.loadMovieDirectorRelation("dataset/ok/relaciones_Director-Pelicula.csv");
         ontologyUtils.loadMovieWriterRelation("dataset/ok/relaciones_Escritor-Pelicula.csv");        
-        ontologyUtils.loadMoviePersonAwardRelation("dataset/ok/relaciones_PersonaPelicula-Premio.csv");
+        ontologyUtils.loadMoviePersonAwardRelation("dataset/ok/relaciones_PersonaPelicula-Premio.csv");        
+        ontologyUtils.saveOntology();*/
         
-        ontologyUtils.saveOntology();
+        MainView mainView = new MainView();
+        mainView.setVisible(true);
+        
         
                 
         /*System.out.println(convDate("1900-01-01"));        
