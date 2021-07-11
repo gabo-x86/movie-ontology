@@ -1,0 +1,310 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology">
+    <Prefix name="" IRI="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Calificacion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pelicula"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Persona"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Premio"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#dirigida_por"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#escrita_por"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#pelicula_gana"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#persona_gana"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#protagonizada_por"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tiene_calificacion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#año_premio"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#calificacion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#descripcion_pelicula"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#duracion_pelicula"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#fecha_estreno"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#fecha_nacimiento"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#id_calificacion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#id_pelicula"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#id_persona"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#id_premio"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#idioma_original"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#motivo_premio"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nombre_genero"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nombre_pelicula"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nombre_persona"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#numero_votos"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#pais_nacimiento"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#pais_pelicula"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#productor_pelicula"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tipo_premio"/>
+    </Declaration>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#dirigida_por"/>
+        <Class IRI="#Pelicula"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#escrita_por"/>
+        <Class IRI="#Pelicula"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#pelicula_gana"/>
+        <Class IRI="#Pelicula"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#persona_gana"/>
+        <Class IRI="#Persona"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#protagonizada_por"/>
+        <Class IRI="#Pelicula"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tiene_calificacion"/>
+        <Class IRI="#Pelicula"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#dirigida_por"/>
+        <Class IRI="#Persona"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#escrita_por"/>
+        <Class IRI="#Persona"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#pelicula_gana"/>
+        <Class IRI="#Premio"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#persona_gana"/>
+        <Class IRI="#Premio"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#protagonizada_por"/>
+        <Class IRI="#Persona"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tiene_calificacion"/>
+        <Class IRI="#Calificacion"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#año_premio"/>
+        <Class IRI="#Premio"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#calificacion"/>
+        <Class IRI="#Calificacion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#descripcion_pelicula"/>
+        <Class IRI="#Pelicula"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#duracion_pelicula"/>
+        <Class IRI="#Pelicula"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fecha_estreno"/>
+        <Class IRI="#Pelicula"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fecha_nacimiento"/>
+        <Class IRI="#Persona"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#id_calificacion"/>
+        <Class IRI="#Calificacion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#id_pelicula"/>
+        <Class IRI="#Pelicula"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#id_persona"/>
+        <Class IRI="#Persona"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#id_premio"/>
+        <Class IRI="#Premio"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#idioma_original"/>
+        <Class IRI="#Pelicula"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#motivo_premio"/>
+        <Class IRI="#Premio"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nombre_pelicula"/>
+        <Class IRI="#Pelicula"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nombre_persona"/>
+        <Class IRI="#Persona"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#numero_votos"/>
+        <Class IRI="#Calificacion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#pais_nacimiento"/>
+        <Class IRI="#Persona"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#pais_pelicula"/>
+        <Class IRI="#Pelicula"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#productor_pelicula"/>
+        <Class IRI="#Pelicula"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tipo_premio"/>
+        <Class IRI="#Premio"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#año_premio"/>
+        <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#calificacion"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#descripcion_pelicula"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#duracion_pelicula"/>
+        <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#fecha_estreno"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#fecha_nacimiento"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#id_calificacion"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#id_pelicula"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#id_persona"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#id_premio"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#idioma_original"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#motivo_premio"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nombre_pelicula"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nombre_persona"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#numero_votos"/>
+        <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#pais_nacimiento"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#pais_pelicula"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#productor_pelicula"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tipo_premio"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

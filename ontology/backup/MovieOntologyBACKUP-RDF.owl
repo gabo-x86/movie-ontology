@@ -1,0 +1,303 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology"
+     xml:base="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#dirigida_por -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#dirigida_por">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#Pelicula"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#Persona"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#escrita_por -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#escrita_por">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#Pelicula"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#Persona"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#pelicula_gana -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#pelicula_gana">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#Pelicula"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#Premio"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#persona_gana -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#persona_gana">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#Persona"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#Premio"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#protagonizada_por -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#protagonizada_por">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#Pelicula"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#Persona"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#tiene_calificacion -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#tiene_calificacion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#Pelicula"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#Calificacion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#año_premio -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#año_premio">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#Premio"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#calificacion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#calificacion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#Calificacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#descripcion_pelicula -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#descripcion_pelicula">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#Pelicula"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#duracion_pelicula -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#duracion_pelicula">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#Pelicula"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#fecha_estreno -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#fecha_estreno">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#Pelicula"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#fecha_nacimiento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#fecha_nacimiento">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#Persona"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#id_calificacion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#id_calificacion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#Calificacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#id_pelicula -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#id_pelicula">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#Pelicula"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#id_persona -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#id_persona">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#Persona"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#id_premio -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#id_premio">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#Premio"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#idioma_original -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#idioma_original">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#Pelicula"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#motivo_premio -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#motivo_premio">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#Premio"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#nombre_genero -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#nombre_genero"/>
+    
+
+
+    <!-- http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#nombre_pelicula -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#nombre_pelicula">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#Pelicula"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#nombre_persona -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#nombre_persona">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#Persona"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#numero_votos -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#numero_votos">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#Calificacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#pais_nacimiento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#pais_nacimiento">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#Persona"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#pais_pelicula -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#pais_pelicula">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#Pelicula"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#productor_pelicula -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#productor_pelicula">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#Pelicula"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#tipo_premio -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#tipo_premio">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#Premio"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#Calificacion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#Calificacion"/>
+    
+
+
+    <!-- http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#Pelicula -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#Pelicula"/>
+    
+
+
+    <!-- http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#Persona -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#Persona"/>
+    
+
+
+    <!-- http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#Premio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/intel-pc/ontologies/2021/4/movie-ontology#Premio"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
